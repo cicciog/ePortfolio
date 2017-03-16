@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Career Builder eProtfolio</title>
+        <!-- Meta -->
+        <meta charset="utf-8">  
+        <link rel="shortcut icon" href="favicon.ico">  
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <!-- Global CSS -->
+        <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+        <!-- Include jqtree.css -->
+        <link rel="stylesheet" href="assets/css/jqtree.css">
+        <!-- Theme CSS -->  
+        <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+        <!--  jQuery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+        <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+        <!-- Bootstrap Date-Picker Plugin -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    </head> 
+
+
+    <body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="assets/images/datasound-wide.png" width="74" healt="22" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active" ><a href="#">ePortfolio</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="wrapper">
+            <div class="sidebar-wrapper">
+                <div class="profile-container">
+                    <img class="profile" src="assets/images/profile.png" alt="" />
+                    <h1 class="name">Mario Rossi</h1>
+                </div><!--//profile-container-->
+
+                <div id="personalInformation" class="contact-container container-block">
+                    <ul class="list-unstyled contact-list">
+                        <li  class="email"><i class="fa fa-envelope"></i><a id="emailId">mario@rossi.it</a></li>
+                        <li  class="phone"><i class="fa fa-phone"></i><a id="phoneId">+39 333 456789</a></li>
+                        <li  class="website"><i class="fa fa-globe"></i><a id="websiteId">www.mariorossi.com</a></li>
+                    </ul>
+                    <button id="changePibtn" data-toggle="modal" data-target="#modifypiModal" type="button" class="btn btn-default btn-xs">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Modify
+                    </button>
+                </div><!--//contact-container-->
+
+                <div class="languages-container container-block">
+                    <h2 class="container-block-title">Languages</h2>
+                    <ul class="list-unstyled interests-list">
+                        <li>Italian <span class="lang-desc">(Native)</span></li>
+                        <li>English <span class="lang-desc">(Professional)</span></li>
+                        <li>French <span class="lang-desc">(Professional)</span></li>
+                    </ul>
+                </div><!--//interests-->
+            </div><!--//sidebar-wrapper-->
+            <div class="main-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#workExperienceTab"><i class="fa fa-briefcase"></i> Work Experience</a></li>
+                            <li><a data-toggle="tab" href="#educationTab"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education & Training</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="workExperienceTab" class="tab-pane fade in active">
+                        <br>
+                        <section id="workExperienceSection" class="section experiences-section">
+                            
+                            <div id="itemW0" class="item">
+                                <div id="metaW0" class="meta">
+                                    <div id="upper-rowW0" class="upper-row">
+                                        <h3 id="job-titleW0" class="job-title">Web Developer</h3>
+                                        <div id="timeW0" class="time">2015 - Present</div>
+                                    </div><!--//upper-row-->
+                                    <div id="detailsW0" class="details">Datasounds S.r.l.</div>
+                                    <div id="companyW0" class="company">Pesche (IS), Italy</div>
+                                    <span class="label label-primary">Javascript</span>
+                                    <span class="label label-primary">Node.Js</span>
+                                    <span class="label label-primary">AngularJs</span>
+                                </div><!--//meta-->
+                                <button id="modifyW0" data-toggle="modal" data-target="#weModal" type="button" class="modifyW btn btn-default btn-xs">
+                                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Modify
+                                </button>
+                            </div><!--//item-->
+                            
+                            <div id="itemW1" class="item">
+                                <div id="metaW1" class="meta">
+                                    <div id="upper-rowW1" class="upper-row">
+                                        <h3 id="job-titleW1" class="job-title">Software Engineer</h3>
+                                        <div id="timeW1" class="time">2016 - Present</div>
+                                    </div><!--//upper-row-->
+                                    <div id="detailsW1" class="details">Google</div>
+                                    <div id="companyW1" class="company">London, Great Britain</div>
+                                    <span class="label label-primary">Java</span>
+                                    <span class="label label-primary">Python</span>
+                                    <span class="label label-primary">C#</span>
+                                </div><!--//meta-->
+                                <button id="modifyW1" data-toggle="modal" data-target="#weModal" type="button" class="modifyW btn btn-default btn-xs">
+                                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Modify
+                                </button>
+                            </div><!--//item-->
+                            
+                            <div id="itemW2" class="item">
+                                <div id="metaW2" class="meta">
+                                    <div id="upper-rowW2" class="upper-row">
+                                        <h3 id="job-titleW2" class="job-title">UI Developer</h3>
+                                        <div id="timeW2" class="time">2012 - 2014</div>
+                                    </div><!--//upper-row-->
+                                    <div id="detailsW2" class="details">Amazon</div>
+                                    <div id="companyW2" class="company">London, Great Britain</div>
+                                    <span class="label label-primary">Bootstrap</span>
+                                    <span class="label label-primary">CSS</span>
+                                    <span class="label label-primary">HTML 5</span>
+                                </div><!--//meta-->
+                                <button id="modifyW2" data-toggle="modal" data-target="#weModal" type="button" class="modifyW btn btn-default btn-xs">
+                                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Modify
+                                </button>
+                            </div><!--//item-->
+                            <div id="addWE" ></div>
+                            <button id="addWEbtn" data-toggle="modal" data-target="#weModal" type="button" class="btn btn-default btn-xs">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
+                            </button><br>
+                        </section><!--//section-->
+                    </div>
+                    <div id="educationTab" class="tab-pane fade">
+                        <br>
+                        <section id="educationSection" class="section experiences-section">
+                            <div id="itemE0" class="item">
+                                <div id="metaE0" class="meta">
+                                    <div id="upper-rowE0" class="upper-row">
+                                        <h3 id="education-titleE0" class="education-title">Bachelor - Computer Science</h3>
+                                        <div id="timeE0" class="time">2013 - 2017</div>
+                                    </div><!--//upper-row-->
+                                    <div id="detailsE0" class="details">University of Molise</div>
+                                    <div id="companyE0" class="company">Pesche (IS), Italy</div>
+                                    <span class="label label-primary">Programming</span>
+                                    <span class="label label-primary">Mathematics</span>
+                                </div><!--//meta-->
+                                <button id="modifyE0" data-toggle="modal" data-target="#modifypiModal" type="button" class="btn btn-default btn-xs">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Modify
+                                </button>
+                            </div><!--//item-->
+                            
+                            <div id="itemE1" class="item">
+                                <div id="metaE1" class="meta">
+                                    <div id="upper-rowE1" class="upper-row">
+                                        <h3 id="education-titleE1" class="education-title">Master's degree - Software Security</h3>
+                                        <div id="timeE1" class="time">2017 - Present</div>
+                                    </div><!--//upper-row-->
+                                    <div id="detailsE1" class="details">University of Molise</div>
+                                    <div id="companyE1" class="company">Pesche (IS), Italy</div>
+                                    <span class="label label-primary">Data Mining</span>
+                                    <span class="label label-primary">Software Security</span>
+                                </div><!--//meta-->
+                                <button id="modifyE1" data-toggle="modal" data-target="#modifypiModal" type="button" class="btn btn-default btn-xs">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Modify
+                                </button>
+                            </div><!--//item-->
+
+                            <div id="addE" ></div>
+                            <button id="addEbtn" data-toggle="modal" data-target="#eModal" type="button" class="btn btn-default btn-xs">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add
+                            </button><br>
+                        </section><!--//section-->
+                    </div>
+                </div>  
+            </div>
+
+            <!-- Modal New Work Experience -->
+            <div class="modal fade" id="weModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div><h3>Work Experience</h3></div>
+                            <div class="form-group">
+                                <div class="form-group"> <!-- Date input -->
+                                    <label class="control-label" for="datefromW">Date from</label>
+                                    <input class="form-control" id="datefromW" name="dateformW" placeholder="MM/DD/YYYY" type="Date"/>
+                                    <label class="control-label" for="datetoW">Date date</label>
+                                    <input class="form-control" id="datetoW" name="datetoW" placeholder="MM/DD/YYYY" type="Date"/>
+                                </div>        
+                            </div>
+                            <div class="checkbox">
+                                <label><input id="presentW" type="checkbox">present</label>
+                            </div>
+                            <label class="control-label">Occupation:</label>
+                            <div class = "input-group">
+                                <div class = "input-group-btn">
+                                    <button type = "button" class = "btn btn-default" tabindex = "-1">Select...</button>
+                                    <button type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown" tabindex = "-1">
+                                        <span class = "caret"></span>
+                                        <span class = "sr-only"></span>
+                                    </button>
+                                    <div id="occupationWtree" class = "dropdown-menu"></div>
+                                </div><!-- /btn-group -->
+                                <input id="occupationW" type = "text" class = "form-control">
+                            </div><!-- /input-group -->
+                            <div class="form-group">
+                                <label for="organisationW">Organisation:</label>
+                                <input type="text" class="form-control" id="organisationW">
+                            </div>
+                            <div class="form-group">
+                                <label for="municipalityW">Municipality:</label>
+                                <input type="text" class="form-control" id="municipalityW">
+                            </div>
+                            <button id="getSkillBtn" type="button" class="btn btn-outline-primary btn-sm">get skills</button><br><br>
+                            <div id="addsW"></div><br>
+                            <button id="closeW" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button id="confirmW" type="button" class="btn btn-default" data-dismiss="modal">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal New Education -->
+            <div class="modal fade" id="eModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div><h3>Education</h3></div>
+                            <div class="form-group">
+                                <div class="form-group"> <!-- Date input -->
+                                    <label class="control-label" for="datefromE">Date to</label>
+                                    <input class="form-control" id="datefromE" name="datefromE" placeholder="MM/DD/YYYY" type="Date"/>
+                                    <label class="control-label" for="datetoE">Date from</label>
+                                    <input class="form-control" id="datetoE" name="datetoE" placeholder="MM/DD/YYYY" type="Date"/>
+                                </div>        
+                            </div>
+                            <div class="checkbox">
+                                <label><input id="presentE" type="checkbox">present</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="levelE">Level:</label>
+                                <select class="form-control" id="levelE">
+                                    <option></option>
+                                    <option>Certificate</option>
+                                    <option>Diploma</option>
+                                    <option>Associate Degree</option>
+                                    <option>Bachelor Degree</option>
+                                    <option>Master's Degree</option>
+                                    <option>Doctorate Degree</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="titleE">Title:</label>
+                                <input type="text" class="form-control" id="titleE">
+                            </div>
+                            <div class="form-group">
+                                <label for="organisationE">Organisation:</label>
+                                <input type="text" class="form-control" id="organisationE">
+                            </div>
+                            <div class="form-group">
+                                <label for="locationE">Location:</label>
+                                <input type="text" class="form-control" id="locationE">
+                            </div>
+                            <div class="form-group">
+                                <label for="skillsByNameE">Search skill:</label>
+                                <input type="text" class="form-control" id="skillsByNameE">
+                            </div>
+                            <div id="skills"></div>
+                            <div id="qualification"></div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button id="confirmE" type="button" class="btn btn-default" data-dismiss="modal">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Personal Information -->
+            <div class="modal fade" id="modifypiModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div><h3>Personal Information</h3></div>
+                            <div class="form-group">
+                                <label for="fEmail"><i class="fa fa-envelope"></i> Email:</label>
+                                <input type="email" class="form-control" id="fEmail">
+                            </div>
+                            <div class="form-group">
+                                <label for="fPhone"><i class="fa fa-phone"></i> Phone:</label>
+                                <input type="text" class="form-control" id="fPhone">
+                            </div>
+                            <div class="form-group">
+                                <label for="fWeb"><i class="fa fa-globe"></i> Website:</label>
+                                <input type="text" class="form-control" id="fWeb">
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button id="confirmPI" type="button" class="btn btn-default" data-dismiss="modal">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div><!--//main-body-->
+
+        <footer class="footer">
+            <div class="text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Powered by F.Gualtieri for <a href="http://www.datasounds.io" target="_blank">Datasounds</a></small>
+            </div><!--//container-->
+        </footer><!--//footer-->
+
+        <!-- Javascript -->          
+        <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+        <!-- Include tree.jquery.js -->
+        <script src="assets/js/tree.jquery.js"></script>
+        <!-- saveState include jquery-cookie -->
+        <script src="assets/js/jquery.cookie.js"></script>
+        <!-- custom js -->
+        <script type="text/javascript" src="assets/js/main.js"></script>  
+        <script type="text/javascript" src="assets/js/ModifyPersonalInformation.js"></script>
+        <script type="text/javascript" src="assets/js/AddWorkExperience.js"></script>
+        <!-- <script type="text/javascript" src="assets/js/AddEducation.js"></script> -->
+        <script type="text/javascript" src="assets/js/ModifyWorkExperience.js"></script>
+        <script type="text/javascript" src="assets/js/ModifyEducation.js"></script>
+    </body>
+</html> 
+

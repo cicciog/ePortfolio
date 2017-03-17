@@ -1,14 +1,13 @@
 var countW = 3;
-
+createOccupationsTree();
 $(document).ready(function () {
+     
     var occupation;
     var dateFrom;
     var dateTo;
     var organisation;
     var country;
     
-    createOccupationsTree();
-
     occupation = $('#occupationW').val();
     dateFrom = $('#datefromW').val();
     dateTo = $('#datetoW').val();

@@ -12,7 +12,6 @@ $(document).ready(function () {
     });
 
     getSkillsByName();
-    hideAndShowAddEbtn();
 });
 
 function presentCheckedE() {
@@ -54,16 +53,6 @@ function addEducation(i) {
 
 }
 
-function hideAndShowAddEbtn() {
-    $("#educationSection").mouseover(function () {
-        $("#addEbtn").show();
-        resetEducationFields();
-    });
-    $("#educationSection").mouseout(function () {
-        $("#addEbtn").hide();
-        resetEducationFields();
-    });
-}
 
 function resetEducationFields() {
 

@@ -22,7 +22,7 @@ $(document).ready(function () {
         $('#skillsByNameEM').val();
 
         $('#confirmWM').click(function () {
-            
+
             var newOccupation = $('#occupationWM').val();
             var newDateFrom = $('#datefromWM').val();
             var newDateTo = $('#datetoWM').val();

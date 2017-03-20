@@ -39,7 +39,9 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active" ><a href="#">Showcase</a></li>
+                    <li class="active" ><a href="user profile - visualization.html">Home</a></li>
+                    <li class="active" ><a href="joboffers - showcase.html">Showcase</a></li>
+                    <li class="active" ><a href="user profile - modification.html">Update Profile</a></li>   
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
@@ -100,14 +102,14 @@
                                             <div id="dateJP1" class="company">15-01-2017</div>
                                         </div><!--//meta-->
                                         <button id="viewJP1" data-toggle="modal" data-target="#weModifyModal" type="button" class="modifyW btn btn-default btn-xs">
-                                            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> View More
+                                            View More <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
                                         </button>
                                     </div><!--//item-->
                                 </div> 
                                 <div class="col-xs-4">Adeguacy<br><canvas id="myChart1" width="70" height="70"></canvas></div>
                             </div>
 
-                            <div class="wellJP row">
+                            <div class="well row">
                                 <div class="col-xs-8">
                                     <div id="itemJP2" class="item">
                                         <div id="metaJP2" class="meta">
@@ -118,7 +120,7 @@
                                             <div id="dateJP2" class="company">15-01-2017</div>
                                         </div><!--//meta-->
                                         <button id="viewJP2" data-toggle="modal" data-target="#weModifyModal" type="button" class="modifyW btn btn-default btn-xs">
-                                            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> View More
+                                           View More <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> 
                                         </button>
                                     </div><!--//item-->
                                 </div>
@@ -181,48 +183,40 @@
         </div> 
     </div>
 
-    <!-- Modal New Work Experience -->
-    <div class="modal fade" id="weModal" role="dialog">
+    <!-- Modal View More Job Offers -->
+    <div class="modal fade" id="joModal" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body">
-                    <div><span class="label label-danger">new</span><h3>Work Experience</h3></div>
-                    <div class="form-group">
-                        <div class="form-group"> <!-- Date input -->
-                            <label class="control-label" for="datefromW">Date from</label>
-                            <input class="form-control" id="datefromW" name="dateformW" placeholder="MM/DD/YYYY" type="Date"/>
-                            <label class="control-label" for="datetoW">Date date</label>
-                            <input class="form-control" id="datetoW" name="datetoW" placeholder="MM/DD/YYYY" type="Date"/>
-                        </div>        
+                    <div class="well container-block">
+                        <div class="row">
+                            <div class="wellJP row">
+                                <div class="col-xs-12">
+                                    <div id="itemJPM" class="item">
+                                        <div id="metaJPM" class="meta">
+                                            <div id="upper-rowJPM" class="upper-row">
+                                                <h3 id="joboffers-titleJPM" class="job-title"></h3>
+                                            </div><!--//upper-row-->
+                                            <div id="descriptionJPM" class="details"></div><br>
+                                            <div class="upper-row">
+                                                <h4 class="job-title">Responsabilities</h4>
+                                            </div>
+                                            <div id="responsabilitiesJPM" class="details"></div><br>
+                                            <div class="upper-row">
+                                                <h4 class="job-title">Requirements</h4>
+                                            </div>
+                                            <div id="requirementsJPM" class="details"></div><br>
+                                            <div id="locationJPM" class="company"></div>
+                                            <div id="dateJPM" class="company"></div>
+                                            <button id="closeW" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button id="confirmWM" type="button" class="btn btn-success" data-dismiss="modal">Candidate</button>
+                                        </div><!--//meta-->
+                                    </div><!--//item-->
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="checkbox">
-                        <label><input id="presentW" type="checkbox">present</label>
-                    </div>
-                    <label class="control-label">Occupation</label>
-                    <div class = "input-group">
-                        <div class = "input-group-btn">
-                            <button type = "button" class = "btn btn-default" tabindex = "-1">Select...</button>
-                            <button type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown" tabindex = "-1">
-                                <span class = "caret"></span>
-                                <span class = "sr-only"></span>
-                            </button>
-                            <div id="occupationWtree" class = "dropdown-menu"></div>
-                        </div><!-- /btn-group -->
-                        <input id="occupationW" type = "text" class = "form-control">
-                    </div><!-- /input-group -->
-                    <div class="form-group">
-                        <label for="organisationW">Organisation</label>
-                        <input type="text" class="form-control" id="organisationW">
-                    </div>
-                    <div class="form-group">
-                        <label for="municipalityW">Municipality</label>
-                        <input type="text" class="form-control" id="municipalityW">
-                    </div>
-                    <button id="getSkillBtn" type="button" class="btn btn-outline-primary btn-sm">get skills</button><br><br>
-                    <div id="addsW"></div><br>
-                    <button id="closeW" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button id="confirmW" type="button" class="btn btn-default" data-dismiss="modal">Confirm</button>
                 </div>
             </div>
         </div>

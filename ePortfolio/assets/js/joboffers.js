@@ -52,14 +52,36 @@ $(document).ready(function () {
     getInformationTechnologyJobOffers(joboffers);
     getEducatorNeducationJobOffers(joboffers);
 
-    $("#search-btn").click(function () {
+    $("#search-btn").click(function (event) {
         console.log('clean search list');
         $('#joboffersSelected').empty();
         console.log('show job offers');
         showJobOffers($("#search-title").val(), $("#sel-domain").val(), joboffers);
     });
 
+    $(this).click(function (event) {
+        if (event.target.id.indexOf('viewJO') >= 0) {
+            console.log(event.target.id.slice(6,7));
+            populateModalJobOffer(event.target.id.slice(6,7),joboffers);
+        }
+    });
+
 });
+
+function populateModalJobOffer(i,joboffers){
+    $('#joboffers-titleJPM').text($('#joboffers-titleJO'+i).text());
+    
+    for(k = 0; k < joboffers.length; k++){
+        if(joboffers[k].title === $('#joboffers-titleJO'+i).text()){
+            $('#descriptionJPM').text(joboffers[k].description);
+            $('#responsabilitiesJPM').text(joboffers[k].responsibilities);
+            $('#requirementsJPM').text(joboffers[k].requirements);
+            $('#locationJPM').text(joboffers[k].location);
+            $('#dateJPM').text(joboffers[k].date);
+            
+        }
+    }    
+}
 
 function getProductionJobOffers(joboffers) {
 
@@ -162,7 +184,7 @@ function writeJobOffers(joboffer, i) {
     var desciption = $('<div></div>').attr('id', 'descriptionJO' + i).addClass('details').text(joboffer.description);
     var location = $('<div></div>').attr('id', 'locationJO' + i).addClass('company').text(joboffer.location);
     var date = $('<div></div>').attr('id', 'dateJO' + i).addClass('company').text(joboffer.date);
-    var button = $('<button></button>').attr('id', 'viewJO' + i).addClass('modifyW btn btn-default btn-xs').attr('data-toggle', 'modal').attr('data-target', '#weModifyModal').attr('type', 'button').text('View More ');
+    var button = $('<button></button>').attr('id', 'viewJO' + i).addClass('showJO btn btn-default btn-xs').attr('data-toggle', 'modal').attr('data-target', '#joModal').attr('type', 'button').text('View More ');
     var span = $('<span></span>').attr('id', 'spanJO' + i).addClass('glyphicon glyphicon-triangle-bottom').attr('aria-hidden', 'true').attr('data-target', '#weModifyModal');
 
     $('#joboffersSelected').append(well);

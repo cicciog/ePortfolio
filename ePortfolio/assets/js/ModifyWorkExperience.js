@@ -3,23 +3,19 @@ $(document).ready(function () {
     $(".item").click(function (event) {
 
         var id = event.target.id;
-        var number = id.slice(7, 8);
-
-        var oDateFromE = $('#timeE' + number).text().slice(0, 5);
-        var oDateToE = $('#timeE' + number).text().slice(7, 15);
-        var oLevelE = $('#levelE' + number).text();
-        var oTitleE = $('#education-titleE' + number).text();
-        var oOrganisationE = $('#organisationE' + number).text();
-        var oLocationE = $('#locationE' + number).text();
-        var oSkillsByNameE = $('#skillsByNameE' + number).text();
-
-        $('#datefromEM').val();
-        $('#datetoEM').val();
-        $('#levelEM').val();
-        $('#titleEM').val();
-        $('#organisationEM').val();
-        $('#locationEM').val();
-        $('#skillsByNameEM').val();
+        var number = id.slice(7, 8);    
+        
+        var oDateFromWEM = $('#timeW' + number).text().slice(0, 5);
+        var oDateToWEM = $('#timeW' + number).text().slice(7, 15);
+        var oOccupationWEM = $('#job-titleW' + number).text();
+        var oOrganisationWEM = $('#detailsW' + number).text();
+        var oLocationWEM = $('#companyW' + number).text();
+        
+        $('#occupationWM').val(oOccupationWEM);
+        $('#datefromWM').val(oDateFromWEM);
+        $('#datetoWM').val(oDateToWEM);
+        $('#organisationWM').val(oOrganisationWEM);
+        $('#municipalityWM').val(oLocationWEM);
 
         $('#confirmWM').click(function () {
 
@@ -155,11 +151,3 @@ function createOccupationsTreeW() {
     );
 }
 
-function updateFields(occupation, date, organisation, location, id) {
-    $('#confirmWM').click(function (number) {
-        $('#job-titleW' + number).text();
-        $('#timeW' + number).text();
-        $('#detailsW' + number).text();
-        $('#companyW' + number).text();
-    });
-}

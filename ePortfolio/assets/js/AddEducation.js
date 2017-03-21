@@ -1,17 +1,15 @@
 var countE = 2;
 
 $(document).ready(function () {
-
-    $('#presentE').click(function () {
-        presentCheckedE();
-    });
-
-    $('#confirmE').click(function () {
+    resetEducationFields();
+    presentCheckedE();
+    addEducation(countE);
+    
+    $('#confirmE').click(function (){
         addEducation(countE);
         countE++;
     });
-
-    getSkillsByName();
+    
 });
 
 function presentCheckedE() {

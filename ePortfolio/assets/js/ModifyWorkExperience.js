@@ -1,15 +1,23 @@
 createOccupationsTreeW();
 $(document).ready(function () {
     $(".item").click(function (event) {
-
-        var id = event.target.id;
-        var number = id.slice(7, 8);    
+        var id;
+        var number;    
         
-        var oDateFromWEM = $('#timeW' + number).text().slice(0, 5);
-        var oDateToWEM = $('#timeW' + number).text().slice(7, 15);
-        var oOccupationWEM = $('#job-titleW' + number).text();
-        var oOrganisationWEM = $('#detailsW' + number).text();
-        var oLocationWEM = $('#companyW' + number).text();
+        var oDateFromWEM;
+        var oDateToWEM;
+        var oOccupationWEM;
+        var oOrganisationWEM;
+        var oLocationWEM;
+
+        id = event.target.id;
+        number = id.slice(7, 8);    
+        
+        oDateFromWEM = $('#timeW' + number).text().slice(0, 5);
+        oDateToWEM = $('#timeW' + number).text().slice(7, 15);
+        oOccupationWEM = $('#job-titleW' + number).text();
+        oOrganisationWEM = $('#detailsW' + number).text();
+        oLocationWEM = $('#companyW' + number).text();
         
         $('#occupationWM').val(oOccupationWEM);
         $('#datefromWM').val(oDateFromWEM);
@@ -19,11 +27,17 @@ $(document).ready(function () {
 
         $('#confirmWM').click(function () {
 
-            var newOccupation = $('#occupationWM').val();
-            var newDateFrom = $('#datefromWM').val();
-            var newDateTo = $('#datetoWM').val();
-            var newOrganisation = $('#organisationWM').val();
-            var newMunicipality = $('#municipalityWM').val();
+            var newOccupation;
+            var newDateFrom;
+            var newDateTo;
+            var newOrganisation;
+            var newMunicipality;
+            
+            newOccupation = $('#occupationWM').val();
+            newDateFrom = $('#datefromWM').val();
+            newDateTo = $('#datetoWM').val();
+            newOrganisation = $('#organisationWM').val();
+            newMunicipality = $('#municipalityWM').val();
 
             $('#job-titleW' + number).text(newOccupation);
             $('#timeW' + number).text(newDateFrom + ' - ' + newDateTo);

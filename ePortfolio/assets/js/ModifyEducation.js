@@ -11,19 +11,21 @@ $(document).ready(function () {
         var oTitleEM = $('#education-titleE' + number).text().slice(split + 1, 50);
         var oOrganisation = $('#detailsE' + number).text();
         var oLocationEM = $('#companyE' + number).text();
-        
-        $('#confirmWM').click(function () {
 
-            var newOccupation = $('#occupationWM').val();
-            var newDateFrom = $('#datefromWM').val();
-            var newDateTo = $('#datetoWM').val();
-            var newOrganisation = $('#organisationWM').val();
-            var newMunicipality = $('#municipalityWM').val();
+        $('#confirmEM').click(function () {
 
-            $('#job-titleW' + number).text(newOccupation);
-            $('#timeW' + number).text(newDateFrom + ' - ' + newDateTo);
-            $('#detailsW' + number).text(newOrganisation);
-            $('#companyW' + number).text(newMunicipality);
+            var newDateFromEM = $('#datefromEM').val();
+            var newDateToEM = $('#datetoEM').val();
+            var newLevelEM = $('#levelEM').val();
+            var newTitleEM = $('#titleEM').val();
+            var newOrganisation = $('#organisationEM').val();
+            var newLocationEM = $('#locationEM').val();
+
+            $('#education-titleE' + number).text();
+            $('#timeE' + number).text(newDateFromEM+' - '+newDateToEM);
+            $('#education-titleE' + number).text(newLevelEM+' - '+newTitleEM);
+            $('#detailsE' + number).text(newOrganisation);
+            $('#companyE' + number).text(newLocationEM);
         });
     });
 });

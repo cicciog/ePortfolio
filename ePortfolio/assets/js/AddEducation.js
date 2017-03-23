@@ -3,7 +3,6 @@ var countE = 2;
 $(document).ready(function () {
     resetEducationFields();
     presentCheckedE();
-    addEducation(countE);
     
     $('#confirmE').click(function (){
         addEducation(countE);
@@ -31,7 +30,7 @@ function addEducation(i) {
     var itemE = $('<div></div>').attr('id', 'itemE' + i.toString()).addClass('item');
     var metaE = $('<div></div>').attr('id', 'metaE' + i).addClass('meta');
     var upperRowE = $('<div></div>').attr('id', 'upperRowE' + i).addClass('upper-row');
-    var educationTitleE = $('<h3></h3>').attr('id', 'education-titleE' + i).addClass('education-title').text(levelE + ' - ' + titleE);
+    var educationTitleE = $('<h3></h3>').attr('id', 'education-titleE' + i).addClass('job-title').text(levelE + ' - ' + titleE);
     var timeE = $('<div></div>').attr('id', 'timeE' + i).addClass('time').text(dateFromE + ' - ' + dateToE);
     var detailsE = $('<div></div>').attr('id', 'detailsE' + i).addClass('details').text(organisationE);
     var companyE = $('<div></div>').attr('id', 'companyE' + i).addClass('company').text(locationE);
